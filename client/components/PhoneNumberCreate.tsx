@@ -69,21 +69,21 @@ export const PhoneNumberCreate = ({
                 selected={
                   phoneNumberToUpdate && phoneNumberToUpdate.type === 'Self'
                 }>
-                Self
+                Şahsi
               </option>
               <option
                 value="Work"
                 selected={
                   phoneNumberToUpdate && phoneNumberToUpdate.type === 'Work'
                 }>
-                Work
+                İş
               </option>
               <option
                 value="Home"
                 selected={
                   phoneNumberToUpdate && phoneNumberToUpdate.type === 'Home'
                 }>
-                Home
+                Ev
               </option>
             </select>
             <FormInput

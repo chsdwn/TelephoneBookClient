@@ -30,7 +30,6 @@ export const Search = ({ getAllBody, setGetAllBody }: IProps) => {
         body.phoneNumber = search;
         break;
     }
-    console.log(body);
     setGetAllBody(body);
   };
 

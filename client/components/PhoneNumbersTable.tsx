@@ -58,7 +58,11 @@ export const PhoneNumbersTable = ({
               <tr key={`person-${i}`} className="hover:bg-gray-300">
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="text-sm text-gray-900">
-                    {phoneNumber.type}
+                    {phoneNumber.type === 'Work'
+                      ? 'İş'
+                      : phoneNumber.type === 'Home'
+                      ? 'Ev'
+                      : 'Şahsi'}
                   </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
