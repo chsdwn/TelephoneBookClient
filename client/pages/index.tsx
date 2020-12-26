@@ -58,6 +58,7 @@ export default function Home() {
   const createPerson = async (person: IPerson) => {
     await personsService.createPerson(person);
     await fetchData();
+    handlePage(1);
   };
 
   const getPersonToUpdate = async (id: string) => {
@@ -68,6 +69,7 @@ export default function Home() {
   const handleUpdatePerson = async (person: IPerson) => {
     await personsService.updatePerson(person);
     setPersonToUpdate(null);
+    handlePage(1);
   };
 
   const deletePersons = async (id: string) => {
@@ -75,6 +77,7 @@ export default function Home() {
     await personsService.deletePerson(ids);
     await fetchData();
     setPersonToUpdate(null);
+    handlePage(1);
   };
 
   const handlePage = (page: number) => {

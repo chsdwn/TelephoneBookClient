@@ -44,6 +44,7 @@ export const Search = ({ getAllBody, setGetAllBody }: IProps) => {
     body.lastName = '';
     body.city = '';
     body.phoneNumber = '';
+    body.page = 1;
     return body;
   };
 
